@@ -38,4 +38,4 @@ main:
       mov r0, r4
       mov r1, #92
       pop { r4, lr }
-      b printf
+      bx lr
