@@ -5,10 +5,10 @@
 # Fecha: 06/12/2021
 
 # Makefile
-all: programa
-programa: programa.o  # enlazarlo para correrlo	
+all: ejercicio
+ejercicio: ejercicio.o  # enlazarlo para correrlo	
 	@echo "                                       _      _        "
-	@echo "     /\                               | |    | |      " 
+	@echo "     /\                               | |    | |       " 
 	@echo "    /  \    ___  ___   ___  _ __ ___  | |__  | | _   _ "
 	@echo "   / /\ \  / __|/ __| / _ \| '_ ` _ \ | '_ \ | || | | |"
 	@echo "  / ____ \ \__ \\__ \|  __/| | | | | || |_) || || |_| |"
@@ -17,7 +17,7 @@ programa: programa.o  # enlazarlo para correrlo
 	@echo "                                                 |___/ "
 	@echo "Linking file & executable..."
 	ld -o $@ $+
-programa.o: programa.s # compilarlo nos genera el .o
+ejercicio.o: ejercicio.s # compilarlo nos genera el .o
 	@echo "Compiling file ..."
 	as -g -mfpu=vfpv2 -o $@ $<
 clean:   # limpiar todo que no se ocupa como lo .o basura
