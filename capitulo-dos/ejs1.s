@@ -12,7 +12,7 @@
 * condicional se ejecute 10 veces, con 5 repeticiones cada vez.
 */
 
-@@ Nombre: ejercicio1.s
+@@ Nombre: ejs1.s
 
 000102c8 <_init>:
    102c8:       e92d4008        push    {r3, lr}
