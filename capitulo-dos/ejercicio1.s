@@ -15,25 +15,27 @@
 @@ Nombre: ejercicio1.s
 
 .data
-var1 : .ascii " %d \012 "
+
+var1: 
+      .ascii " %d \012 "
 .text
 .global main
-main : push { r4, lr }
-  mov r1, #100
-  ldr r4, = var1
-  mov r0, r4
-  bl printf
-  mov r0, r4
-  mov r1, #98
-  bl printf
-  mov r0, r4
-  mov r1, #96
-  bl printf
-  mov r0, r4
-  mov r1, #94
-  bl printf
-  mov r0, r4
-  mov r1, #92
-  pop { r4, lr }
-  b printf
-
+main: 
+      push { r4, lr }
+      mov r1, #100
+      ldr r4, = var1
+      mov r0, r4
+      bl printf
+      mov r0, r4
+      mov r1, #98
+      bl printf
+      mov r0, r4
+      mov r1, #96
+      bl printf
+      mov r0, r4
+      mov r1, #94
+      bl printf
+      mov r0, r4
+      mov r1, #92
+      pop { r4, lr }
+      b printf
