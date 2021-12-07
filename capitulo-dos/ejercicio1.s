@@ -15,25 +15,25 @@
 @@ Nombre: ejercicio1.s
 
 .data
-var1 : .asciz " %d\ 012 "
+var1 : .ascii " %d \012 "
 .text
 .global main
 main : push { r4, lr }
-  mov r1, # 0
+  mov r1, #100
   ldr r4, = var1
   mov r0, r4
   bl printf
   mov r0, r4
-  mov r1, # 1
+  mov r1, #98
   bl printf
   mov r0, r4
-  mov r1, # 2
+  mov r1, #96
   bl printf
   mov r0, r4
-  mov r1, # 3
+  mov r1, #94
   bl printf
   mov r0, r4
-  mov r1, # 4
+  mov r1, #92
   pop { r4, lr }
   b printf
 
